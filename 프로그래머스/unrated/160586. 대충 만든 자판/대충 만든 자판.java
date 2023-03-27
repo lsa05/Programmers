@@ -16,9 +16,9 @@ class Solution {
         int i = 0;
         for(String t : targets){
             
-            for(char c : t.toCharArray()){
-                if(keyStore.containsKey(c)){
-                    answer[i] += keyStore.get(c);
+            for(char ct : t.toCharArray()){
+                if(keyStore.containsKey(ct)){
+                    answer[i] += keyStore.get(ct);
                     
                 }else{
                     answer[i] = -1;
@@ -27,6 +27,7 @@ class Solution {
                 
             }i++;
         }
+     
         
         return answer;
     }
